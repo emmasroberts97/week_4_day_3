@@ -35,4 +35,12 @@ attr_accessor :id, :name, :url
     return House.new(house)
   end
 
+  def get_students()
+    sql = "SELECT * FROM students WHERE students.house = $1"
+    values = [@id]
+    result = SqlRunner.run(sql, values)
+    students_data = result.map{|student| Student.new(student)}
+    return students_data
+  end
+
 end
