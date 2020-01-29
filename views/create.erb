@@ -1,0 +1,25 @@
+<form class="create" action="/hogwarts" method="post">
+  <label for="first-name">First Name:</label>
+    <input id="first-name" type="text" name="first_name" />
+
+
+    <label for="last-name">Last Name:</label>
+    <input id="last-name" type="text" name="last_name">
+
+
+    <label for="house">Select a house:</label>
+    <select id="hogwarts_house" name="house">
+      <option value="<%= @houses[0].id %>">Gryffindor</option>
+      <option value="<%= @houses[1].id %>">Ravenclaw</option>
+      <option value="<%= @houses[2].id %>">Hufflepuff</option>
+      <option value="<%= @houses[3].id %>">Slytherin</option>
+    </select>
+
+
+    <label for="age">Age:</label>
+    <input id="age" type="number" name="age"/>
+
+
+    <input class="submit-button" type='submit' value="Add Student"/>
+
+</form>

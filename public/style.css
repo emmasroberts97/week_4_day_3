@@ -1,0 +1,68 @@
+body{
+  background-image: url('https://vignette.wikia.nocookie.net/harrypotter/images/0/04/Hogwarts.jpg/revision/latest?cb=20080813002811');
+  background-size: cover;
+}
+
+h2 {
+  justify-content: center;
+  display: flex;
+  color: darkgray;
+}
+
+p {
+  justify-content: center;
+  display: flex;
+  color: ghostwhite;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+}
+
+a:visited{
+  color: blue;
+}
+
+a:link{
+  color: white;
+}
+
+input {
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+select {
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+.submit-button {
+  margin-top: 10px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

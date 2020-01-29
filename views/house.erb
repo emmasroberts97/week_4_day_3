@@ -1,0 +1,10 @@
+<h2> Hogwarts' Houses </h2>
+
+<% for house in @houses %>
+<p> Name: <%= house.name %> </p>
+
+<form method="get" action="/hogwarts/houses/<%= house.id %>">
+    <input type="submit" value="View House" />
+  </form>
+
+<% end %>
